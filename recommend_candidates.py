@@ -56,13 +56,13 @@ def generate_summary(top_candidates_df,path,i):
     #print(resume_title)
     jd_title_name = 'SRE Cloud Native.pdf'
 
-    top_resume_pdf_path = f'/Users/omkarg/Downloads/flask_ui_working/Flask_App2/static/Data_Resumes_PDF/{resume_title}'
+    top_resume_pdf_path = f'./static/Data_Resumes_PDF/{resume_title}'
     #jd_path_new = path
     #print(path)
     current_jd = pd.read_excel(path)
     #print(current_jd)
     jd_title_name = current_jd['JD_PDF_Title'][0]
-    jd_path_new = f'/Users/omkarg/Downloads/flask_ui_working/Flask_App2/static/pdf/{jd_title_name}'
+    jd_path_new = f'./static/pdf/{jd_title_name}'
 
     top_cand_text = parse.get_text(top_resume_pdf_path)
     jd_text = parse.get_text(jd_path_new)
@@ -165,13 +165,13 @@ def main(path,requisition_id):
     #     print(resume_title)
     #     jd_title_name = 'SRE Cloud Native.pdf'
 
-    #     top_resume_pdf_path = f'/Users/omkarg/Downloads/flask_ui_working/Flask_App2/static/Data_Resumes_PDF/{resume_title}'
+    #     top_resume_pdf_path = f'./static/Data_Resumes_PDF/{resume_title}'
     #     #jd_path_new = path
     #     #print(path)
     #     current_jd = pd.read_excel(path)
     #     #print(current_jd)
     #     jd_title_name = current_jd['JD_PDF_Title'][0]
-    #     jd_path_new = f'/Users/omkarg/Downloads/flask_ui_working/Flask_App2/static/pdf/{jd_title_name}'
+    #     jd_path_new = f'./static/pdf/{jd_title_name}'
 
     #     top_cand_text = parse.get_text(top_resume_pdf_path)
     #     jd_text = parse.get_text(jd_path_new)
